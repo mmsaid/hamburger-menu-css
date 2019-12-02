@@ -1,5 +1,4 @@
 
-/* Nav Bar */
 #navbar-wrap .nav-container {
   display: block;
 }
@@ -11,7 +10,6 @@
   padding-top: 1rem;
 }
 
-/* Main */
 main .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,7 +32,6 @@ main section .content-wrap .main-container article:last-child {
   align-items: center;
 }
 
-/* Service */
 #service {
   background: #999;
   padding-bottom: 2rem;
@@ -48,7 +45,6 @@ main section .content-wrap .main-container article:last-child {
   grid-gap: 1rem;
 }
 
-/* Contact */
 section .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
