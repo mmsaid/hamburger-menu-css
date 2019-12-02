@@ -3,14 +3,11 @@
  display: none;
 }
 
-/* Mobile Navbar */
-/* to position the checkbox and keep it in top of anything on the page */
 #navbar-wrap2 {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  /* to show the hamburger menu when I switch it to a mobile device */
   display: block;
 }
 
@@ -21,13 +18,11 @@
   background: #333;
   width: 50px;
   height: 50px;
-  /*because I want that always to be on the top to check it and uncheck it(open or close the menue)*/
   z-index: 2;
   opacity: 0;
   cursor: pointer;
 }
 
-/* to create the menu square shaped */
 #navbar-wrap2 .hamburger {
   position: absolute;
   top: 0;
@@ -39,12 +34,10 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  /* to be under the checkbox */
   z-index: 1;
   border: 0.1px deepskyblue solid;
 }
 
-/* to create middle line */
 #navbar-wrap2 .hamburger .lines {
   display: flex;
   justify-content: center;
@@ -57,7 +50,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* to ctreate top line */
 #navbar-wrap2 .hamburger .lines::before {
   content: '';
   display: flex;
@@ -72,7 +64,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* to create bottom line */
 #navbar-wrap2 .hamburger .lines::after {
   content: '';
   display: flex;
@@ -87,24 +78,20 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* to rotate the middle line when the checkbox is checked */
 #navbar-wrap2 .checkbox:checked + .hamburger > .lines {
   transform: rotate(135deg);
 }
 
-/* to rotate the top line when the checkbox is checked */
 #navbar-wrap2 .checkbox:checked + .hamburger > .lines::before {
   transform: rotate(90deg);
   top: 0;
 }
 
-/* to rotate the bottom line when the checkbox is checked */
 #navbar-wrap2 .checkbox:checked + .hamburger > .lines::after {
   transform: rotate(90deg);
   top: 0;
 }
 
-/* to rotate the lines when I hover on them. */
 #navbar-wrap2 .checkbox:checked:hover + .hamburger > .lines {
   transform: rotate(220deg);
   background: deepskyblue;
@@ -132,12 +119,10 @@
   list-style: none;
 }
 
-/* to hide the nasted ul */
 #main-nav2 ul li ul {
   display: none;
 }
 
-/* to display the nasted ul in block */
 #main-nav2 ul li:hover ul {
   display: block;
   position: absolute;
@@ -208,7 +193,6 @@
   border-radius: 0;
 }
 
-/* outter div to set up the layover background and scale down the menu */
 #main-nav2 > div {
   background: rgba(50, 53, 58, 0.9);
   width: 200vw;
@@ -223,7 +207,6 @@
   flex: none;
 }
 
-/* inner div to hide the menu items when I close the menu */
 #main-nav2 > div > div {
   width: 100%;
   height: 100%;
@@ -247,7 +230,6 @@
   opacity: 1;
 }
 
-/* Main */
 main .main-container {
   display: block;
 }
@@ -269,7 +251,6 @@ main section .content-wrap .main-container article:last-child {
   margin-bottom: 1rem;
  }
 
- /* Service */
  .service-container {
   display: block;
 }
@@ -278,17 +259,13 @@ section i {
  margin: 1rem;
 }
 
- /* Contact & Map */
  .map {
   display: none;
 }
 
 section .contact-container {
   display: block;
-  /* margin-left: 2.5rem; */
 }
-
-
 
 input {
   width: 100%;
